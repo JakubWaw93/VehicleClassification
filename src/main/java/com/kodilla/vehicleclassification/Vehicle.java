@@ -1,5 +1,7 @@
 package com.kodilla.vehicleclassification;
 
+import java.util.Objects;
+
 public class Vehicle {
 
     private String allocation;
@@ -38,6 +40,19 @@ public class Vehicle {
                 "\nModel='" + model + "'," +
                 "\nYear of production=" + productionYear +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Vehicle vehicle = (Vehicle) o;
+        return productionYear == vehicle.productionYear && Objects.equals(allocation, vehicle.allocation) && Objects.equals(producer, vehicle.producer) && Objects.equals(model, vehicle.model);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(model, productionYear);
     }
 }
 
