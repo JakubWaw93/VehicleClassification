@@ -16,12 +16,17 @@ public class EngineWaterVehicle extends WaterVehicle {
     }
     @Override
     public String toString() {
+        String engineStatus;
+        if (engineOn) {
+            engineStatus = "ON";
+        }else{ engineStatus="OFF";
+        }
         return "Vehicle{" +
                 "\nAllocation='" + getAllocation() + "'," +
                 "\nProducer='" + getProducer() + "'," +
                 "\nModel='" + getModel() + "'," +
                 "\nYear of production=" + getProductionYear() +
-                "\nIs engine ON?=" + engineOn +
+                "\nEngine Status=" + engineStatus +
                 '}';
     }
     public void start(){

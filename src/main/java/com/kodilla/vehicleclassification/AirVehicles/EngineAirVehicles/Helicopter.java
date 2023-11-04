@@ -13,5 +13,6 @@ public class Helicopter extends EngineAirVehicle{
         newHelicopter.stop();
         System.out.println(newHelicopter);
         newHelicopter.stop();
+        newHelicopter.fly();
     }
 }
