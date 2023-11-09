@@ -2,7 +2,7 @@ package com.kodilla.vehicleclassification;
 
 import java.util.Objects;
 
-public class Vehicle {
+public abstract class Vehicle {
 
     private String allocation;
     private String producer;

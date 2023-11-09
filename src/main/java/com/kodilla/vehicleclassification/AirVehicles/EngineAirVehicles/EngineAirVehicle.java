@@ -2,7 +2,7 @@ package com.kodilla.vehicleclassification.AirVehicles.EngineAirVehicles;
 
 import com.kodilla.vehicleclassification.AirVehicles.AirVehicle;
 
-public class EngineAirVehicle extends AirVehicle {
+public abstract class EngineAirVehicle extends AirVehicle {
 
     private boolean engineOn;
 

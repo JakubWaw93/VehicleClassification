@@ -2,7 +2,7 @@ package com.kodilla.vehicleclassification.GroundVehicles.EngineGroundVehicles;
 
 import com.kodilla.vehicleclassification.GroundVehicles.GroundVehicle;
 
-public class EngineGroundVehicle extends GroundVehicle {
+public abstract class EngineGroundVehicle extends GroundVehicle {
 
     private boolean engineOn;
 

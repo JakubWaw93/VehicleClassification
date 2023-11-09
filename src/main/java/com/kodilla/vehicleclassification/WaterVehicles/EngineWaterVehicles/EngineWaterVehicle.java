@@ -2,7 +2,7 @@ package com.kodilla.vehicleclassification.WaterVehicles.EngineWaterVehicles;
 
 import com.kodilla.vehicleclassification.WaterVehicles.WaterVehicle;
 
-public class EngineWaterVehicle extends WaterVehicle {
+public abstract class EngineWaterVehicle extends WaterVehicle {
 
     private boolean engineOn;
 
