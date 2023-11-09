@@ -10,4 +10,3 @@ public abstract class WaterVehicle extends Vehicle {
         System.out.println("This vehicle can swim.");
     }
 }
-UML
